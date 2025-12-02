@@ -7,14 +7,7 @@ import Image from "next/image"
 export function About() {
     return (
         <section className="py-24 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
-            {/* Decorative background elements */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-pink-200/20 blur-3xl" />
-                <div className="absolute top-[20%] -right-[10%] w-[30%] h-[30%] rounded-full bg-violet-200/20 blur-3xl" />
-                <div className="absolute -bottom-[10%] left-[20%] w-[30%] h-[30%] rounded-full bg-blue-200/20 blur-3xl" />
-            </div>
-
-            <div className="container px-4 mx-auto relative z-10">
+            <div className="container max-w-7xl mx-auto px-4 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     {/* Text Content */}
                     <div className="flex-1 text-center lg:text-left">
@@ -28,7 +21,7 @@ export function About() {
                         </h2>
 
                         <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
-                            At CoopleGames, we believe that gaming is more than just entertainment—it's a way to connect, relax, and find joy. Our mission is to create adorable, inclusive, and fun experiences that bring smiles to players of all ages.
+                            At CoopleGames, we believe that gaming is more than just entertainment it's a way to connect relax and find joy. Our mission is to create adorable inclusive and fun experiences that bring smiles to players of all ages.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
