@@ -6,10 +6,10 @@ export function PopularGame() {
         <section className="py-24 bg-white dark:bg-slate-900">
             <div className="container max-w-7xl mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-50 mb-4">
                         Popular Games
                     </h2>
-                    <p className="text-lg text-slate-600 dark:text-slate-400">
+                    <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
                         Check out what everyone is playing right now!
                     </p>
                 </div>

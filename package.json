@@ -5,8 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
+    "build": "next build --webpack",
+    "dev": "next dev --webpack",
     "generate:importmap": "payload generate:importmap",
     "generate:types": "payload generate:types",
     "payload": "payload",
@@ -58,6 +58,7 @@
     "motion": "^12.23.25",
     "next": "16.0.6",
     "next-themes": "^0.4.6",
+    "nextjs-toploader": "^3.9.17",
     "payload": "3.65.0",
     "postcss": "^8.5.6",
     "react": "19.2.0",

@@ -12,8 +12,8 @@ export function Features() {
                             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-pink-100 dark:bg-pink-900/30 text-pink-500">
                                 <Heart className="h-8 w-8" />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50 mb-2">Made with Love</h3>
-                            <p className="text-slate-600 dark:text-slate-400">Hand-picked selection of the most wholesome and heartwarming games.</p>
+                            <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mb-2">Made with Love</h3>
+                            <p className="text-base text-slate-600 dark:text-slate-400 leading-relaxed">Hand-picked selection of the most wholesome and heartwarming games.</p>
                         </CardContent>
                     </Card>
 
@@ -23,8 +23,8 @@ export function Features() {
                             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-violet-100 dark:bg-violet-900/30 text-violet-500">
                                 <Users className="h-8 w-8" />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50 mb-2">Community First</h3>
-                            <p className="text-slate-600 dark:text-slate-400">Connect with friends and make new ones in our friendly gaming community.</p>
+                            <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mb-2">Community First</h3>
+                            <p className="text-base text-slate-600 dark:text-slate-400 leading-relaxed">Connect with friends and make new ones in our friendly gaming community.</p>
                         </CardContent>
                     </Card>
 
@@ -34,8 +34,8 @@ export function Features() {
                             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-500">
                                 <Trophy className="h-8 w-8" />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50 mb-2">Fun Challenges</h3>
-                            <p className="text-slate-600 dark:text-slate-400">Earn achievements and climb the leaderboards in your favorite games.</p>
+                            <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-50 mb-2">Fun Challenges</h3>
+                            <p className="text-base text-slate-600 dark:text-slate-400 leading-relaxed">Earn achievements and climb the leaderboards in your favorite games.</p>
                         </CardContent>
                     </Card>
                 </div>

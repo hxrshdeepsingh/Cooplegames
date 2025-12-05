@@ -1,126 +1,85 @@
 import Link from "next/link";
-import { Twitter, Linkedin, Instagram, Gamepad2, Heart } from "lucide-react";
-
-const footerLinks = {
-    product: [
-        { title: "Features", href: "/features" },
-        { title: "Games", href: "/games" },
-        { title: "Pricing", href: "/pricing" },
-        { title: "Changelog", href: "/changelog" },
-    ],
-    company: [
-        { title: "About", href: "/about" },
-        { title: "Careers", href: "/careers" },
-        { title: "Blog", href: "/blog" },
-        { title: "Contact", href: "/contact" },
-    ],
-    legal: [
-        { title: "Privacy", href: "/privacy" },
-        { title: "Terms", href: "/terms" },
-        { title: "Cookie Policy", href: "/cookies" },
-    ]
-};
+import { Twitter, Instagram, Heart, Github } from "lucide-react";
+import Image from "next/image";
 
 const socialLinks = [
     {
         name: "Twitter",
-        href: "https://twitter.com",
+        href: "https://x.com/hxrshdeepsingh",
         icon: <Twitter className="h-5 w-5" />
     },
     {
-        name: "LinkedIn",
-        href: "https://linkedin.com",
-        icon: <Linkedin className="h-5 w-5" />
+        name: "Instagram",
+        href: "https://instagram.com/hxrshdeepsingh",
+        icon: <Instagram className="h-5 w-5" />
     },
     {
-        name: "Instagram",
-        href: "https://instagram.com",
-        icon: <Instagram className="h-5 w-5" />
+        name: "GitHub",
+        href: "https://github.com/hxrshdeepsingh",
+        icon: <Github className="h-5 w-5" />
     },
 ];
 
 export function Footer() {
     return (
-        <footer className="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
-            <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-                <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-                    {/* Brand Column */}
-                    <div className="space-y-8">
-                        <Link href="/" className="flex items-center gap-2">
-                            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-pink-500 to-violet-500 text-white">
-                                <Gamepad2 className="w-5 h-5" />
+        <footer className="bg-gradient-to-b from-white to-pink-50">
+            <div className="bg-white/50 backdrop-blur-sm border-t border-pink-100 rounded-t-[3rem] shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.05)]">
+                <div className="mx-auto max-w-7xl px-6 py-12 md:py-16 lg:px-8">
+                    <div className="flex flex-col items-center justify-center text-center space-y-8">
+                        {/* Brand */}
+                        <Link href="/" className="group flex flex-col items-center gap-3">
+                            <div className="relative">
+                                <div className="absolute -inset-2 bg-pink-100 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                <Image
+                                    src="/icon.svg"
+                                    alt="Logo"
+                                    width={50}
+                                    height={50}
+                                    className="relative transform group-hover:scale-110 transition-transform duration-300"
+                                />
                             </div>
-                            <span className="text-xl font-bold text-slate-900 dark:text-slate-50">CoopleGames</span>
+                            <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-600">
+                                CoopleGames
+                            </span>
                         </Link>
-                        <p className="text-sm leading-6 text-slate-600 dark:text-slate-400 max-w-xs">
-                            Making the world a happier place, one game at a time. Join our community of friendly gamers today!
+
+                        {/* Tagline */}
+                        <p className="text-base text-gray-500 max-w-md mx-auto leading-relaxed">
+                            Sparking joy and deep conversations, one card at a time.
+                            <br className="hidden sm:block" />
+                            Grab a friend and start playing! ✨
                         </p>
-                        <div className="flex space-x-6">
+
+                        {/* Social Links */}
+                        <div className="flex gap-6">
                             {socialLinks.map((item) => (
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className="text-slate-400 hover:text-pink-500 dark:hover:text-pink-400 transition-colors"
+                                    className="p-3 rounded-full bg-white border border-pink-100 text-gray-400 hover:text-pink-500 hover:border-pink-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
                                 >
                                     <span className="sr-only">{item.name}</span>
                                     {item.icon}
                                 </Link>
                             ))}
                         </div>
-                    </div>
 
-                    {/* Links Columns */}
-                    <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                            <div>
-                                <h3 className="text-sm font-semibold leading-6 text-slate-900 dark:text-slate-50">Product</h3>
-                                <ul role="list" className="mt-6 space-y-4">
-                                    {footerLinks.product.map((item) => (
-                                        <li key={item.title}>
-                                            <Link href={item.href} className="text-sm leading-6 text-slate-600 dark:text-slate-400 hover:text-pink-500 dark:hover:text-pink-400 transition-colors">
-                                                {item.title}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
+                        {/* Copyright & Love */}
+                        <div className="w-full border-t border-pink-100/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+                            <div className="flex flex-col md:flex-row items-center gap-4">
+                                <p className="flex items-center gap-1.5 bg-pink-50 px-3 py-1 rounded-full text-pink-600/80 font-medium">
+                                    &copy; {new Date().getFullYear()} CoopleGames.
+                                </p>
+                                <div className="flex gap-4 text-xs font-medium">
+                                    <Link href="/privacy" className="hover:text-pink-500 transition-colors">Privacy</Link>
+                                    <Link href="/terms" className="hover:text-pink-500 transition-colors">Terms</Link>
+                                </div>
                             </div>
-                            <div className="mt-10 md:mt-0">
-                                <h3 className="text-sm font-semibold leading-6 text-slate-900 dark:text-slate-50">Company</h3>
-                                <ul role="list" className="mt-6 space-y-4">
-                                    {footerLinks.company.map((item) => (
-                                        <li key={item.title}>
-                                            <Link href={item.href} className="text-sm leading-6 text-slate-600 dark:text-slate-400 hover:text-pink-500 dark:hover:text-pink-400 transition-colors">
-                                                {item.title}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                            <div>
-                                <h3 className="text-sm font-semibold leading-6 text-slate-900 dark:text-slate-50">Legal</h3>
-                                <ul role="list" className="mt-6 space-y-4">
-                                    {footerLinks.legal.map((item) => (
-                                        <li key={item.title}>
-                                            <Link href={item.href} className="text-sm leading-6 text-slate-600 dark:text-slate-400 hover:text-pink-500 dark:hover:text-pink-400 transition-colors">
-                                                {item.title}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                            <p className="flex items-center gap-1.5 bg-pink-50 px-3 py-1 rounded-full text-pink-600/80 font-medium">
+                                Made with <Heart className="h-3.5 w-3.5 fill-current animate-pulse" /> for connection
+                            </p>
                         </div>
                     </div>
-                </div>
-
-                <div className="mt-16 border-t border-slate-200 dark:border-slate-800 pt-8 sm:mt-20 lg:mt-24 flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <p className="text-xs leading-5 text-slate-500 dark:text-slate-400">
-                        &copy; {new Date().getFullYear()} CoopleGames, Inc. All rights reserved.
-                    </p>
-                    <p className="text-xs leading-5 text-slate-500 dark:text-slate-400 flex items-center gap-1">
-                        Made with <Heart className="h-3 w-3 text-pink-500 fill-pink-500" /> by CoopleGames Team
-                    </p>
                 </div>
             </div>
         </footer>
