@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield } from "lucide-react";
 
