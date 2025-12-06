@@ -6,6 +6,11 @@ import { getPayloadClient } from "@/lib/payload";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Gamepad2, Sparkles, MessageCircleHeart, Users, Star, Heart, Zap } from "lucide-react";
 
+export const metadata = {
+    description: 'Discover exciting couple game categories including truths, dares, tricky questions, and lusty games made to strengthen your relationship.',
+    title: 'Games Categories – Truth, Dare & Romantic Questions',
+}
+
 export default async function Page() {
     const payload = await getPayloadClient();
     const categories = await payload.find({

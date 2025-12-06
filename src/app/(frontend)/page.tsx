@@ -29,3 +29,8 @@ export default async function Page() {
     </div>
   )
 }
+
+export const metadata = {
+  description: 'Play fun, romantic, and spicy games for couples. Explore truth, dare, tricky, and lusty questions to bond, laugh, and connect deeper with your partner.',
+  title: 'CoopleGames – Fun & Romantic Games for Couples',
+}

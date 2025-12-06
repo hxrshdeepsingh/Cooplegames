@@ -3,6 +3,11 @@ export const dynamic = "force-static";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield } from "lucide-react";
 
+export const metadata = {
+    description: 'Learn how CoupleGames handles your data, privacy, and security. Your trust and safety are our top priority.',
+    title: 'Privacy Policy – CoupleGames',
+}
+
 export default function PrivacyPage() {
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pt-32 pb-24 px-4">

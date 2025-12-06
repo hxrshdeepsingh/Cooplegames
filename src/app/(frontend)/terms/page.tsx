@@ -3,6 +3,11 @@ export const dynamic = "force-static";
 import { Card, CardContent } from "@/components/ui/card";
 import { ScrollText } from "lucide-react";
 
+export const metadata = {
+    description: 'Read the terms and conditions for using CoupleGames. Learn about user responsibilities, content usage, and app guidelines.',
+    title: 'Terms & Conditions – CoupleGames',
+}
+
 export default function TermsPage() {
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pt-32 pb-24 px-4">
