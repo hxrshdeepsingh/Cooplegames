@@ -44,7 +44,7 @@ export function GameControls({ slug, pageNumber, total }: GameControlsProps) {
       <Button
         variant="ghost"
         size="icon"
-        className="flex-none rounded-full bg-pink-50 text-pink-500 hover:bg-pink-100 hover:text-pink-600 w-12 h-12 shadow-sm border border-pink-100"
+        className="flex-none rounded-full bg-pink-50 text-pink-500 hover:bg-pink-100 hover:text-pink-600 dark:bg-pink-900/20 dark:text-pink-400 w-12 h-12 shadow-sm border border-pink-100 dark:border-pink-900"
         onClick={handleRandom}
         title="Random Question"
       >

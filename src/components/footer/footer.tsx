@@ -22,8 +22,8 @@ const socialLinks = [
 
 export function Footer() {
     return (
-        <footer className="bg-gradient-to-b from-white to-pink-50">
-            <div className="bg-white/50 backdrop-blur-sm border-t border-pink-100 rounded-t-[3rem] shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.05)]">
+        <footer className="bg-gradient-to-b from-white to-pink-50 dark:from-slate-950 dark:to-slate-900">
+            <div className="bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm border-t border-pink-100 dark:border-slate-800 rounded-t-[3rem] shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.05)]">
                 <div className="mx-auto max-w-7xl px-6 py-12 md:py-16 lg:px-8">
                     <div className="flex flex-col items-center justify-center text-center space-y-8">
                         {/* Brand */}
@@ -44,7 +44,7 @@ export function Footer() {
                         </Link>
 
                         {/* Tagline */}
-                        <p className="text-base text-gray-500 max-w-md mx-auto leading-relaxed">
+                        <p className="text-base text-gray-500 dark:text-slate-400 max-w-md mx-auto leading-relaxed">
                             Sparking joy and deep conversations, one card at a time.
                             <br className="hidden sm:block" />
                             Grab a friend and start playing! ✨
@@ -56,7 +56,7 @@ export function Footer() {
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className="p-3 rounded-full bg-white border border-pink-100 text-gray-400 hover:text-pink-500 hover:border-pink-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+                                    className="p-3 rounded-full bg-white dark:bg-slate-800 border border-pink-100 dark:border-slate-700 text-gray-400 dark:text-slate-400 hover:text-pink-500 hover:border-pink-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
                                 >
                                     <span className="sr-only">{item.name}</span>
                                     {item.icon}
@@ -65,9 +65,9 @@ export function Footer() {
                         </div>
 
                         {/* Copyright & Love */}
-                        <div className="w-full border-t border-pink-100/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+                        <div className="w-full border-t border-pink-100/50 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400 dark:text-slate-500">
                             <div className="flex flex-col md:flex-row items-center gap-4">
-                                <p className="flex items-center gap-1.5 bg-pink-50 px-3 py-1 rounded-full text-pink-600/80 font-medium">
+                                <p className="flex items-center gap-1.5 bg-pink-50 dark:bg-pink-900/10 px-3 py-1 rounded-full text-pink-600/80 dark:text-pink-400/80 font-medium">
                                     &copy; {new Date().getFullYear()} CoopleGames.
                                 </p>
                                 <div className="flex gap-4 text-xs font-medium">
@@ -75,7 +75,7 @@ export function Footer() {
                                     <Link href="/terms" className="hover:text-pink-500 transition-colors">Terms</Link>
                                 </div>
                             </div>
-                            <p className="flex items-center gap-1.5 bg-pink-50 px-3 py-1 rounded-full text-pink-600/80 font-medium">
+                            <p className="flex items-center gap-1.5 bg-pink-50 dark:bg-pink-900/10 px-3 py-1 rounded-full text-pink-600/80 dark:text-pink-400/80 font-medium">
                                 Made with <Heart className="h-3.5 w-3.5 fill-current animate-pulse" /> for connection
                             </p>
                         </div>

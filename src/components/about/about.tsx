@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export function About() {
     return (
-        <section className="py-24 relative overflow-hidden">
+        <section id="about" className="py-24 relative overflow-hidden">
             <div className="container max-w-7xl mx-auto px-4 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     <div className="flex-1 text-center lg:text-left">
