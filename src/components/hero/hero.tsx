@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Hero() {
     return (
-        <section className="relative overflow-hidden pt-16 pb-32 lg:pt-32">
+        <section className="relative overflow-hidden py-32 lg:pt-32">
             <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-slate-950 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] opacity-20" />
             <div className="container mx-auto px-4 text-center">
                 <Badge variant="secondary" className="mb-6 rounded-full px-4 py-1.5 text-sm font-medium bg-pink-100 text-pink-600 hover:bg-pink-200 dark:bg-pink-900/30 dark:text-pink-400 border-0">
